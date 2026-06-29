@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-added-large-files
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      - id: fix-byte-order-marker
+  - repo: https://github.com/JohnnyMorganz/stylua
+    rev: v2.0.2
+    hooks:
+      - id: stylua
+        args: [--config-path, .stylua.toml]
+
+ci:
+  autofix_commit_msg: "chore: auto-fix pre-commit issues"
+  autofix_prs: true
+  autoupdate_commit_msg: "chore: auto-update pre-commit hooks"
+  autoupdate_schedule: weekly
