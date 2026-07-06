@@ -13,7 +13,7 @@ repos:
         args: [--fix=lf]
       - id: fix-byte-order-marker
   - repo: https://github.com/JohnnyMorganz/stylua
-    rev: v2.0.2
+    rev: v2.5.2
     hooks:
       - id: stylua
         args: [--config-path, .stylua.toml]
