@@ -1,7 +1,9 @@
 return {
   "neovim/nvim-lspconfig",
-  event = { "BufReadPost", "BufNewFile" },
+  event = { "BufReadPre", "BufNewFile" },
   config = function()
+    require("config.lsp")
+
     vim.api.nvim_create_autocmd("LspAttach", {
       callback = function(args)
         local map = function(keys, func, desc)
