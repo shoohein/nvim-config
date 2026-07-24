@@ -4,6 +4,30 @@ return {
   config = function()
     require("config.lsp")
 
+    vim.diagnostic.config({
+      severity_sort = true,
+      underline = true,
+      signs = true,
+      virtual_text = {
+        spacing = 2,
+        source = "if_many",
+        format = function(diagnostic)
+          local msg = diagnostic.message:gsub("\n", " "):gsub("%s+", " ")
+          return string.format("%s", msg)
+        end,
+      },
+      virtual_lines = { current_line = true },
+      float = {
+        border = "rounded",
+        source = true,
+        header = "",
+        format = function(diagnostic)
+          local msg = diagnostic.message:gsub("\n", " "):gsub("%s+", " ")
+          return string.format("%s", msg)
+        end,
+      },
+    })
+
     vim.api.nvim_create_autocmd("LspAttach", {
       callback = function(args)
         local map = function(keys, func, desc)
