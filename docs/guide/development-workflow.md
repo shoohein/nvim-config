@@ -261,7 +261,5 @@ i            入力再開
 
 ## 発展: 専用プラグイン
 
-現時点ではNeovim標準機能で運用しています。以下のプラグインは、不便を感じたときに検討してください。
-
 - [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim): ターミナルの開閉と状態保持
 - [overseer.nvim](https://github.com/stevearc/overseer.nvim): ビルド・テストのタスク管理
