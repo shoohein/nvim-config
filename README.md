@@ -32,6 +32,7 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 | 診断一覧 | trouble.nvim |
 | 括弧補完 | nvim-autopairs |
 | Markdownプレビュー | render-markdown.nvim |
+| ステータスライン・バッファ一覧 | lualine.nvim |
 
 ## キーマップ
 
