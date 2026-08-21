@@ -33,6 +33,7 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 | 括弧補完 | nvim-autopairs |
 | Markdownプレビュー | render-markdown.nvim |
 | ステータスライン・バッファ一覧 | lualine.nvim |
+| Git差分表示 | gitsigns.nvim |
 
 ## キーマップ
 
@@ -92,6 +93,20 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 | `]d` | 次の診断へ |
 | `<leader>xx` | ワークスペース全体の診断一覧 |
 | `<leader>xX` | 現在のバッファの診断一覧 |
+
+### Git
+
+| キー | 動作 |
+|---|---|
+| `[c` | 前のGit変更へ |
+| `]c` | 次のGit変更へ |
+| `<leader>gp` | 変更をプレビュー |
+| `<leader>gi` | 変更をインライン表示 |
+| `<leader>gs` | 変更をステージ |
+| `<leader>gr` | 変更を元に戻す |
+| `<leader>gq` | 変更一覧を表示 |
+| `<leader>gb` | 行のBlameを表示 |
+| `ih` (Operator) | Git変更ブロックを選択 |
 
 ## ドキュメント
 
