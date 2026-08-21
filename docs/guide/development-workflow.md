@@ -150,7 +150,8 @@ q             記録終了
 | `:copen` | quickfix windowを開く |
 | `:cclose` | quickfix windowを閉じる |
 | `:cnext` / `:cprev` | 次/前のアイテムへ |
-| `:grep <pattern>` | プロジェクト全体を検索し結果をquickfixへ |
+| `:grep <args>` | `grepprg`で検索し、結果をquickfixへ |
+| `<leader>fg` | プロジェクト全体をテキスト検索（Telescope） |
 
 location list（`:lgrep`）はwindowごとに独立した結果一覧です。
 
@@ -182,7 +183,6 @@ Terminal modeでは`Ctrl-h`と`Ctrl-l`がwindow移動に割り当てられます
 | `:read !<command>` | コマンドの出力をカーソル位置に挿入 |
 | `:'<,'>!<command>` | 選択範囲を外部コマンドに渡して置換 |
 | `:make` | `makeprg`でビルドし結果をquickfixへ |
-| `K` | カーソル下の単語のmanページ（ターミナルモード内） |
 
 ## Telescope
 
@@ -196,6 +196,12 @@ Terminal modeでは`Ctrl-h`と`Ctrl-l`がwindow移動に割り当てられます
 | `<leader>fh` | ヘルプタグ検索 |
 
 Telescope内では`Ctrl-j`/`Ctrl-k`で上下に選択を移動できます。
+
+## 補完
+
+blink.cmpは`super-tab`プリセットを使用します。Insert modeでは、`<Tab>`で補完候補を確定し、`<S-Tab>`で前のスニペットプレースホルダーへ移動します。`<Up>` / `<Down>`または`<C-p>` / `<C-n>`で候補を移動し、`<C-Space>`で補完メニューを表示、`<C-e>`で補完をキャンセルできます。処理できない場合は通常のキー操作へフォールバックします。
+
+候補はLSP、パス、スニペット、現在のバッファから取得します。補完ドキュメントは自動表示しません。
 
 ## LSP（Language Server Protocol）
 
@@ -233,9 +239,9 @@ Telescope内では`Ctrl-j`/`Ctrl-k`で上下に選択を移動できます。
 
 | キー | 動作 |
 |---|---|
-| `<leader>f` | バッファ全体をフォーマット |
+| `<leader>f` | Normal modeではバッファ全体、Visual modeでは選択範囲をフォーマット |
 
-保存時にも自動でフォーマットされます。
+Go、Lua、Pythonのバッファでは保存時にも自動でフォーマットされます。対象言語のバッファを開いた時点で設定が読み込まれるため、初回保存前に`<leader>f`を実行する必要はありません。
 
 ## Git差分
 

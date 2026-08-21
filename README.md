@@ -31,7 +31,7 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 | フォーマッタ | conform.nvim |
 | 診断一覧 | trouble.nvim |
 | 括弧補完 | nvim-autopairs |
-| Markdownプレビュー | render-markdown.nvim |
+| Markdown表示の装飾 | render-markdown.nvim |
 | ステータスライン・バッファ一覧 | lualine.nvim |
 | Git差分表示 | gitsigns.nvim |
 
@@ -59,7 +59,7 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 
 | キー | 動作 |
 |---|---|
-| `<leader>f` | バッファ全体をフォーマット（保存時も自動実行） |
+| `<leader>f` | Normal modeではバッファ全体、Visual modeでは選択範囲をフォーマット（保存時も自動実行） |
 
 ### Window・ターミナル
 
