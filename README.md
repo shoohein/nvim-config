@@ -24,6 +24,7 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 |---|---|
 | プラグイン管理 | lazy.nvim |
 | ファイラ | neo-tree |
+| 編集型ファイラ | oil.nvim |
 | ファジーファインダ | Telescope |
 | シンタックスハイライト | nvim-treesitter |
 | 補完 | blink.cmp |
@@ -50,6 +51,7 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 |---|---|
 | `<leader>e` | Neo-treeの表示切り替え |
 | `<leader>E` | Neo-treeで現在のファイルを表示 |
+| `-` | 親ディレクトリを開く（oil.nvim） |
 | `<leader>ff` | ファイル検索（Telescope） |
 | `<leader>fg` | テキスト検索（Telescope） |
 | `<leader>fb` | バッファ一覧（Telescope） |
