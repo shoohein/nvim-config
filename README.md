@@ -8,7 +8,6 @@ Neovim設定です。
 - Git
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Nerd Font](https://www.nerdfonts.com/)（アイコン表示に推奨）
-- 言語ごとの追加ツール（任意）
 
 ## セットアップ
 

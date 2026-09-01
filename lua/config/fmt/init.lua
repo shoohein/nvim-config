@@ -5,6 +5,8 @@ require("conform").setup({
     python = require("config.fmt.python"),
     c = require("config.fmt.clang"),
     cpp = require("config.fmt.clang"),
+    sh = require("config.fmt.sh"),
+    bash = require("config.fmt.sh"),
   },
   format_on_save = {
     timeout_ms = 1000,
