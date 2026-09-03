@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "jj", "<Cmd>stopinsert<CR>", { desc = "Exit insert mode" })
 
 vim.keymap.set("n", "<leader>t", "<Cmd>botright vsplit | terminal<CR>", { desc = "Open terminal on the right" })
+vim.keymap.set("n", "<leader>ut", "<Cmd>TransparentToggle<CR>", { desc = "Toggle transparency" })
 
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to lower window" })

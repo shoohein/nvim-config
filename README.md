@@ -34,6 +34,7 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 | Markdown表示の装飾 | render-markdown.nvim |
 | ステータスライン・バッファ一覧 | lualine.nvim |
 | Git差分表示 | gitsigns.nvim |
+| 背景の透明化 | transparent.nvim |
 
 ## キーマップ
 
@@ -67,6 +68,7 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 | キー | 動作 |
 |---|---|
 | `<leader>t` | 右側に縦分割でターミナルを開く |
+| `<leader>ut` | 背景の透明化を切り替え |
 | `<C-h>` | 左のwindowへ |
 | `<C-j>` | 下のwindowへ |
 | `<C-k>` | 上のwindowへ |
