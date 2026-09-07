@@ -71,8 +71,8 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 | キー         | 動作                           |
 | ------------ | ------------------------------ |
 | `<leader>t`  | 下ターミナルパネルの開閉トグル |
-| `<C-`>\`     | 下ターミナルパネルの開閉トグル |
-| `Esc`        | Terminal modeからNormal modeへ |
+| `` <C-`> ``  | 下ターミナルパネルの開閉トグル |
+| `Esc` / `jj` | Terminal modeからNormal modeへ |
 | `<leader>ut` | 背景の透明化を切り替え         |
 | `<C-h>`      | 左のwindowへ                   |
 | `<C-j>`      | 下のwindowへ                   |
@@ -81,16 +81,16 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 
 ### LSP
 
-| キー         | 動作             |
-| ------------ | ---------------- |
-| `gd`         | 定義へ移動       |
-| `gD`         | 宣言へ移動       |
-| `gi`         | 実装へ移動       |
-| `gr`         | 参照一覧         |
-| `K`          | ホバー表示       |
-| `<C-k>`      | シグネチャヘルプ |
-| `<leader>rn` | 名前変更         |
-| `<leader>ca` | コードアクション |
+| キー         | 動作                  |
+| ------------ | --------------------- |
+| `gd`         | 定義へ移動            |
+| `gD`         | 宣言へ移動            |
+| `gi`         | 実装へ移動            |
+| `gr`         | 参照一覧（Telescope） |
+| `K`          | ホバー表示            |
+| `<C-k>`      | シグネチャヘルプ      |
+| `<leader>rn` | 名前変更              |
+| `<leader>ca` | コードアクション      |
 
 ### 診断
 
