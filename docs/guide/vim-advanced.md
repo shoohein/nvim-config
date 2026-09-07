@@ -14,8 +14,6 @@
 
 tabをブラウザのタブのようにファイル単位で使うのは避けてください。1つのtabに複数のwindowを並べ、必要に応じて別のtabに別のレイアウトを用意するのがVim的です。
 
-この設定では、画面上部に開いているbufferを番号・ファイル種別アイコン・ファイル名付きで表示します。表示される番号はbuffer番号なので、`:b <番号>`で直接移動できます。
-
 | 操作        | 動作                   |
 | ----------- | ---------------------- |
 | `:b <番号>` | 指定したbufferへ移動   |
@@ -23,7 +21,7 @@ tabをブラウザのタブのようにファイル単位で使うのは避け�
 | `:bp`       | 前のbufferへ移動       |
 | `:ls`       | buffer一覧と番号を表示 |
 
-buffer番号はbufferごとに割り当てられる内部IDです。bufferを閉じても番号は詰め直されないため、表示上の左から何番目かとは一致しない場合があります。
+buffer番号は詰め直されないため、左から何番目かとは一致しない場合があります。この設定のbuffer表示は[プラグイン操作ガイド](plugins.md#%E3%83%90%E3%83%83%E3%83%95%E3%82%A1%E4%B8%80%E8%A6%A7)を参照してください。
 
 ## window操作
 
@@ -40,13 +38,13 @@ buffer番号はbufferごとに割り当てられる内部IDです。bufferを閉
 
 | キー       | 動作             |
 | ---------- | ---------------- |
-| `Ctrl-h`   | 左のwindowへ     |
-| `Ctrl-j`   | 下のwindowへ     |
-| `Ctrl-k`   | 上のwindowへ     |
-| `Ctrl-l`   | 右のwindowへ     |
+| `Ctrl-w h` | 左のwindowへ     |
+| `Ctrl-w j` | 下のwindowへ     |
+| `Ctrl-w k` | 上のwindowへ     |
+| `Ctrl-w l` | 右のwindowへ     |
 | `Ctrl-w w` | 次のwindowへ循環 |
 
-この設定ではNormal modeとTerminal modeの両方で移動できます。Terminal modeから移動するとNormal modeに戻ります。Terminal modeで入力を再開するには`i`を押します。
+この設定では`Ctrl-h/j/k/l`にもwindow移動を割り当てています（Terminal mode含む）。
 
 ### サイズ
 
@@ -172,9 +170,7 @@ location list（`:lgrep`）はwindowごとに独立した結果一覧です。
 | --------------- | ------------------------------ |
 | `Ctrl-\ Ctrl-n` | Terminal modeからNormal modeへ |
 
-この設定ではNormal modeとTerminal modeの両方で`Ctrl-h/j/k/l`によるwindow移動ができます。Terminal modeから移動するとNormal modeに戻ります。Terminal modeで入力を再開するには`i`を押します。
-
-Terminal modeでは`Ctrl-h`と`Ctrl-l`がwindow移動に割り当てられます。シェル上でこのキーを使う一般的な操作（`Ctrl-h`でバックスペース、`Ctrl-l`で画面クリア）は、Backspaceキーや`clear`コマンドで代用できます。
+この設定のwindow移動キー（`Ctrl-h/j/k/l`）とその注意点は[プラグイン操作ガイド](plugins.md#%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%83%91%E3%83%8D%E3%83%AB)を参照してください。
 
 ### 外部コマンド連携
 
