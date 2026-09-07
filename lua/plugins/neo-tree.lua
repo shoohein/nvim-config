@@ -9,6 +9,19 @@ return {
   keys = {
     { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "Toggle NeoTree" },
     { "<leader>E", "<cmd>Neotree reveal<cr>", desc = "NeoTree Reveal" },
+    { "<leader>ge", "<cmd>Neotree git_status reveal toggle<cr>", desc = "NeoTree Git Status" },
   },
-  opts = {},
+  opts = {
+    window = {
+      position = "left",
+      width = 30,
+    },
+    filesystem = {
+      follow_current_file = { enabled = true, leave_dirs_open = true },
+      filtered_items = {
+        hide_dotfiles = false,
+        hide_gitignored = false,
+      },
+    },
+  },
 }
