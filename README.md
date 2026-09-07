@@ -5,7 +5,7 @@ Neovim設定です。
 ## 前提
 
 - Neovim 0.11以上
-- Git
+- Git（lazy.nvimによるプラグイン取得・更新に必須）
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Nerd Font](https://www.nerdfonts.com/)（アイコン表示に推奨）
 
