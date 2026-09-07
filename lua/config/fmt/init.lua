@@ -7,6 +7,7 @@ require("conform").setup({
     cpp = require("config.fmt.clang"),
     sh = require("config.fmt.sh"),
     bash = require("config.fmt.sh"),
+    markdown = require("config.fmt.markdown"),
   },
   format_on_save = {
     timeout_ms = 1000,

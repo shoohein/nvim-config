@@ -1,6 +1,6 @@
 return {
   "stevearc/conform.nvim",
-  ft = { "go", "lua", "python" },
+  ft = { "go", "lua", "python", "markdown" },
   cmd = "ConformInfo",
   keys = {
     {
