@@ -118,6 +118,5 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 
 ## ドキュメント
 
-- [docs/guide/vim-basics.md](docs/guide/vim-basics.md) — Vim基本操作
-- [docs/guide/vim-advanced.md](docs/guide/vim-advanced.md) — 効率的な開発操作（Vim標準）
-- [docs/guide/plugins.md](docs/guide/plugins.md) — プラグインの操作
+- [docs/guide](docs/guide) — Neovimの操作ガイド
+- [docs/development](docs/development) — 開発者向け規約

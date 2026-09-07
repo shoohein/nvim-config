@@ -1,5 +1,6 @@
 # ドキュメント
 
-このディレクトリにはこのNeovim設定の利用ガイドが含まれています。
+このディレクトリにはNeovimの操作ガイドと開発者向け規約が含まれています。
 
-- [guide/](guide/) — 利用ガイド
+- [guide/](guide/) — Neovimの操作ガイド
+- [development/](development/) — 開発者向け規約
