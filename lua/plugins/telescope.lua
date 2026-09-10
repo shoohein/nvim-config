@@ -10,6 +10,7 @@ return {
   },
   opts = {
     defaults = {
+      file_ignore_patterns = { "^%.git/" },
       mappings = {
         i = {
           ["<C-j>"] = "move_selection_next",
