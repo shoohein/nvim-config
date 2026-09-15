@@ -1,4 +1,5 @@
 vim.opt.number = true
+vim.opt.updatetime = 300
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 4

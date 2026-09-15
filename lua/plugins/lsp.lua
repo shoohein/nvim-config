@@ -36,6 +36,25 @@ return {
       },
     })
 
+    vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
+    vim.lsp.handlers["textDocument/signatureHelp"] =
+      vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
+
+    vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+      callback = function()
+        if vim.fn.mode() ~= "n" then
+          return
+        end
+        for _, win in ipairs(vim.api.nvim_list_wins()) do
+          if vim.api.nvim_win_get_config(win).relative ~= "" then
+            return
+          end
+        end
+        vim.diagnostic.open_float({ focus = false, scope = "cursor" })
+      end,
+      desc = "Show cursor diagnostics in a rounded float",
+    })
+
     vim.api.nvim_create_autocmd("LspAttach", {
       callback = function(args)
         local map = function(keys, func, desc)
