@@ -2,6 +2,10 @@ return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
   config = function()
+    local ok, blink = pcall(require, "blink.cmp")
+    if ok and blink.get_lsp_capabilities then
+      vim.lsp.config("*", { capabilities = blink.get_lsp_capabilities() })
+    end
     require("config.lsp")
 
     vim.diagnostic.config({
