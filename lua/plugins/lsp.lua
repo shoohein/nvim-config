@@ -7,16 +7,24 @@ return {
     vim.diagnostic.config({
       severity_sort = true,
       underline = true,
-      signs = true,
+      update_in_insert = false,
+      signs = {
+        text = {
+          [vim.diagnostic.severity.ERROR] = "󰅚 ",
+          [vim.diagnostic.severity.WARN] = "󰀪 ",
+          [vim.diagnostic.severity.INFO] = "󰋽 ",
+          [vim.diagnostic.severity.HINT] = "󰌶 ",
+        },
+      },
       virtual_text = {
         spacing = 2,
         source = "if_many",
+        prefix = "●",
         format = function(diagnostic)
           local msg = diagnostic.message:gsub("\n", " "):gsub("%s+", " ")
           return string.format("%s", msg)
         end,
       },
-      virtual_lines = { current_line = true },
       float = {
         border = "rounded",
         source = true,
