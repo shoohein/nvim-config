@@ -3,7 +3,6 @@ return {
   version = "*",
   keys = {
     { "<leader>t", "<cmd>ToggleTerm<cr>", desc = "Toggle terminal panel" },
-    { "<C-`>", "<cmd>ToggleTerm<cr>", desc = "Toggle terminal panel", mode = { "n", "t" } },
   },
   opts = {
     direction = "horizontal",

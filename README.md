@@ -71,7 +71,6 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 | キー         | 動作                           |
 | ------------ | ------------------------------ |
 | `<leader>t`  | 下ターミナルパネルの開閉トグル |
-| `` <C-`> ``  | 下ターミナルパネルの開閉トグル |
 | `Esc` / `jj` | Terminal modeからNormal modeへ |
 | `<leader>ut` | 背景の透明化を切り替え         |
 | `<C-h>`      | 左のwindowへ                   |
