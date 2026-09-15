@@ -81,16 +81,20 @@ git clone git@p.github.com:shoohein/nvim-config.git ~/.config/nvim
 
 ### LSP
 
-| キー         | 動作                  |
-| ------------ | --------------------- |
-| `gd`         | 定義へ移動            |
-| `gD`         | 宣言へ移動            |
-| `gi`         | 実装へ移動            |
-| `gr`         | 参照一覧（Telescope） |
-| `K`          | ホバー表示            |
-| `<C-k>`      | シグネチャヘルプ      |
-| `<leader>rn` | 名前変更              |
-| `<leader>ca` | コードアクション      |
+| キー         | 動作                              |
+| ------------ | --------------------------------- |
+| `gd`         | 定義へ移動                        |
+| `gD`         | 宣言へ移動                        |
+| `gi`         | 実装へ移動（一覧・Telescope）     |
+| `gr`         | 参照一覧（Telescope）             |
+| `gy`         | 型定義へ移動（一覧・Telescope）   |
+| `K`          | ホバー表示                        |
+| `<C-s>`      | シグネチャヘルプ（Normal/Insert） |
+| `<leader>rn` | 名前変更                          |
+| `<leader>ca` | コードアクション（Normal/Visual） |
+| `<leader>ds` | 文書シンボル一覧（Telescope）     |
+| `<leader>ws` | ワークスペースシンボル検索        |
+| `<leader>th` | インレイヒント表示の切り替え      |
 
 ### 診断
 
