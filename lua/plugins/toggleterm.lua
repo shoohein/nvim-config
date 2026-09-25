@@ -7,7 +7,7 @@ return {
   opts = {
     direction = "horizontal",
     size = 15,
-    shade_terminals = true,
+    shade_terminals = false,
     start_in_insert = true,
     persist_mode = true,
     close_on_exit = true,

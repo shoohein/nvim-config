@@ -1,4 +1,5 @@
 vim.opt.number = true
+vim.opt.termguicolors = true
 vim.opt.updatetime = 300
 
 vim.opt.expandtab = true
