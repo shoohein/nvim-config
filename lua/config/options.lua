@@ -1,6 +1,7 @@
 vim.opt.number = true
 vim.opt.termguicolors = true
 vim.opt.updatetime = 300
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
