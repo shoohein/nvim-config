@@ -19,7 +19,7 @@ repos:
         additional_dependencies:
           - mdformat-gfm
   - repo: https://github.com/JohnnyMorganz/stylua
-    rev: v2.5.2
+    rev: v2.6.0
     hooks:
       - id: stylua
         args: [--config-path, .stylua.toml]
